@@ -1678,7 +1678,7 @@ Partial Class Form_App_Product_Licence_Form
     '' Click Sync button to sync license status
     Protected Sub AILicenceRefresh_Click(sender As Object, e As EventArgs) Handles AILicenceRefresh.Click
         Try
-            RunSQL("EXEC SP_Sync_LMS_Licence")
+            'RunSQL("EXEC SP_Sync_LMS_Licence")
         Catch ex As Exception
             Response.Write("ERROR: " & ex.Message)
         End Try

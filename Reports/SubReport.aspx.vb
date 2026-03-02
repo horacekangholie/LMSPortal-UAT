@@ -133,7 +133,7 @@ Partial Class Reports_SubReport
 
     Protected Sub btnRefresh_Click(sender As Object, e As EventArgs) Handles btnRefresh.Click
         Try
-            RunSQL("EXEC SP_Sync_LMS_Licence")
+            'RunSQL("EXEC SP_Sync_LMS_Licence")
         Catch ex As Exception
             Response.Write("ERROR: " & ex.Message)
         End Try

@@ -20,7 +20,7 @@ Partial Class Views_App_Product_Licence_List
 
         If Not IsPostBack Then
             Try
-                RunSQL("EXEC SP_Sync_LMS_Licence")
+                'RunSQL("EXEC SP_Sync_LMS_Licence")
             Catch ex As Exception
                 Response.Write("ERROR: " & ex.Message)
             End Try

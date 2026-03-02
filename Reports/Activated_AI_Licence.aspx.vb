@@ -203,7 +203,7 @@ Partial Class Reports_Activated_AI_Licence
 
     Protected Sub AILicenceRefresh_Click(sender As Object, e As EventArgs) Handles AILicenceRefresh.Click
         Try
-            RunSQL("EXEC SP_Sync_LMS_Licence")
+            'RunSQL("EXEC SP_Sync_LMS_Licence")
         Catch ex As Exception
             Response.Write("ERROR: " & ex.Message)
         End Try
